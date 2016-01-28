@@ -15,7 +15,7 @@ import retrofit.http.GET;
 
 public interface RTService {
 
-    @GET("/lists/movies/upcoming.json?" + Config.CLIENT_ID)
+    @GET("/lists/movies/upcoming.json?apikey=" + Config.CLIENT_ID)
     void getMoviesFromRT(
             Callback<List<Movie>> callback );
 
